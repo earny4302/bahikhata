@@ -90,6 +90,8 @@ declare type Bank = {
   fundingSourceUrl: string;
   userId: string;
   sharableId: string;
+  currentBalance: number;
+  
 };
 
 declare type AccountTypes =
@@ -218,6 +220,7 @@ declare interface RightSidebarProps {
   user: User;
   transactions: Transaction[];
   banks: Bank[] & Account[];
+  currentBalance: number;
 }
 
 declare interface SiderbarProps {
