@@ -220,7 +220,7 @@ declare interface RightSidebarProps {
   user: User;
   transactions: Transaction[];
   banks: Bank[] & Account[];
-  
+  currentBalance: number;
 }
 
 declare interface SiderbarProps {
